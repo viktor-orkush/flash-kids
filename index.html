@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flash Kids — Дитячий садок у Дніпрі</title>
+  <meta name="description" content="Flash Kids — приватний дитячий садок на Лівому березі Дніпра. Групи до 8 дітей, логопед, англійська, 3-разове харчування. Вік 2.5–6 років.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Flash Kids — Дитячий садок у Дніпрі">
+  <meta property="og:description" content="Приватний садочок на Лівому березі. Групи до 8 дітей, логопед, англійська, 3-разове харчування.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="uk_UA">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="fk-header" id="header">
+    <div class="fk-container fk-header__inner">
+      <a href="#hero" class="fk-header__logo">
+        <span class="fk-logo-icon">FK</span>
+        <span class="fk-logo-text">Flash Kids</span>
+      </a>
+
+      <nav class="fk-nav" id="nav">
+        <a href="#about" class="fk-nav__link">Про нас</a>
+        <a href="#programs" class="fk-nav__link">Програми</a>
+        <a href="#advantages" class="fk-nav__link">Переваги</a>
+        <a href="#gallery" class="fk-nav__link">Галерея</a>
+        <a href="#price" class="fk-nav__link">Ціни</a>
+        <a href="#contacts" class="fk-nav__link">Контакти</a>
+      </nav>
+
+      <a href="tel:+380634183223" class="fk-header__phone">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        063 418 32 23
+      </a>
+
+      <button class="fk-burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section class="fk-hero" id="hero">
+    <div class="fk-hero__bg">
+      <div class="fk-hero__shape fk-hero__shape--1"></div>
+      <div class="fk-hero__shape fk-hero__shape--2"></div>
+      <div class="fk-hero__shape fk-hero__shape--3"></div>
+      <div class="fk-hero__shape fk-hero__shape--4"></div>
+    </div>
+    <div class="fk-container fk-hero__content">
+      <div class="fk-hero__badge">Дитячий садок у Дніпрі</div>
+      <h1 class="fk-hero__title">
+        Flash <span class="fk-hero__title--accent">Kids</span>
+      </h1>
+      <p class="fk-hero__subtitle">
+        Місце, де дитинство проживають,<br>а не &laquo;проходять&raquo;
+      </p>
+      <div class="fk-hero__stats">
+        <div class="fk-hero__stat">
+          <span class="fk-hero__stat-num">8</span>
+          <span class="fk-hero__stat-label">дітей у групі</span>
+        </div>
+        <div class="fk-hero__stat">
+          <span class="fk-hero__stat-num">2.5–6</span>
+          <span class="fk-hero__stat-label">років</span>
+        </div>
+        <div class="fk-hero__stat">
+          <span class="fk-hero__stat-num">9</span>
+          <span class="fk-hero__stat-label">програм розвитку</span>
+        </div>
+      </div>
+      <div class="fk-hero__actions">
+        <a href="#contacts" class="fk-btn fk-btn--primary">Записати дитину</a>
+        <a href="tel:+380634183223" class="fk-btn fk-btn--outline">Зателефонувати</a>
+      </div>
+    </div>
+    <div class="fk-hero__scroll">
+      <span>Дізнатись більше</span>
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="fk-section fk-about" id="about">
+    <div class="fk-container">
+      <div class="fk-section__header">
+        <span class="fk-section__tag">Про нас</span>
+        <h2 class="fk-section__title">Щаслива дитина = спокійні батьки</h2>
+        <p class="fk-section__desc">
+          Ми створили простір, де діти не просто проводять час &mdash; вони ростуть, відкривають світ і відчувають себе в безпеці. Наші викладачі &mdash; психологи, тому кожна дитина тут відчуває себе спокійно, впевнено і захищено.
+        </p>
+      </div>
+
+      <div class="fk-about__principles">
+        <div class="fk-about__principle fk-animate">
+          <div class="fk-about__principle-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--color-yellow)" stroke-width="1.5"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <h3>Почути</h3>
+          <p>Ми слухаємо кожну дитину, бо кожна &mdash; унікальна особистість зі своїм темпом і потребами.</p>
+        </div>
+        <div class="fk-about__principle fk-animate">
+          <div class="fk-about__principle-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--color-blue)" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </div>
+          <h3>Підтримати</h3>
+          <p>Створюємо безпечне середовище, де дитина може помилятися, пробувати і рости без страху.</p>
+        </div>
+        <div class="fk-about__principle fk-animate">
+          <div class="fk-about__principle-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3>Зацікавити</h3>
+          <p>Не &laquo;заняття&raquo;, а маленькі відкриття. Навчання через гру, цікавість і захоплення.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROGRAMS ========== -->
+  <section class="fk-section fk-section--alt fk-programs" id="programs">
+    <div class="fk-container">
+      <div class="fk-section__header">
+        <span class="fk-section__tag">Програми</span>
+        <h2 class="fk-section__title">Не заняття, а маленькі відкриття</h2>
+        <p class="fk-section__desc">9 напрямків розвитку для вашої дитини</p>
+      </div>
+
+      <div class="fk-programs__grid">
+        <div class="fk-program-card fk-animate">
+          <div class="fk-program-card__emoji">&#127968;</div>
+          <h3 class="fk-program-card__title">Садочок</h3>
+          <p class="fk-program-card__desc">Повний день з 8:00 до 18:00. Турботливі вихователі, розвиваючі ігри, 3-разове харчування.</p>
+        </div>
+        <div class="fk-program-card fk-animate">
+          <div class="fk-program-card__emoji">&#128483;</div>
+          <h3 class="fk-program-card__title">Логопед</h3>
+          <p class="fk-program-card__desc">Коли дитина починає говорити чітко &mdash; і раптом ще впевненіше про себе заявляє.</p>
+        </div>
+        <div class="fk-program-card fk-animate">
+          <div class="fk-program-card__emoji">&#127468;&#127463;</div>
+          <h3 class="fk-program-card__title">Англійська</h3>
+          <p class="fk-program-card__desc">Не зубріння, а перші &laquo;hello&raquo; з усмішкою і розумінням. Ігрова методика.</p>
+        </div>
+        <div class="fk-program-card fk-animate">
+          <div class="fk-program-card__emoji">&#127917;</div>
+          <h3 class="fk-program-card__title">Театр</h3>
+          <p class="fk-program-card__desc">Коли сором'язливість змінюється на &laquo;дивись, як я можу!&raquo; Розкриваємо таланти.</p>
+        </div>
+        <div class="fk-program-card fk-animate">
+          <div class="fk-program-card__emoji">&#127925;</div>
+          <h3 class="fk-program-card__title">Музика</h3>
+          <p class="fk-program-card__desc">Ритм, який відчувається не тільки в музиці, а й у настрої. Спів, ритміка, інструменти.</p>
+        </div>
+        <div class="fk-program-card fk-animate">
+          <div class="fk-program-card__emoji">&#127912;</div>
+          <h3 class="fk-program-card__title">Живопис</h3>
+          <p class="fk-program-card__desc">Тут немає &laquo;правильно&raquo; чи &laquo;неправильно&raquo; &mdash; тільки фантазія дитини.</p>
+        </div>
+        <div class="fk-program-card fk-animate">
+          <div class="fk-program-card__emoji">&#129504;</div>
+          <h3 class="fk-program-card__title">Математика</h3>
+          <p class="fk-program-card__desc">Коли навчання стає грою, а інтерес &mdash; звичкою. Логіка та розвиваючі заняття.</p>
+        </div>
+        <div class="fk-program-card fk-animate">
+          <div class="fk-program-card__emoji">&#127891;</div>
+          <h3 class="fk-program-card__title">Підготовка до школи</h3>
+          <p class="fk-program-card__desc">Репетитор для дошкільнят. Читання, письмо, рахунок &mdash; все, що потрібно першокласнику.</p>
+        </div>
+        <div class="fk-program-card fk-animate">
+          <div class="fk-program-card__emoji">&#9997;&#65039;</div>
+          <h3 class="fk-program-card__title">Майстер-класи</h3>
+          <p class="fk-program-card__desc">Творчі заняття, де діти вчаться створювати щось нове своїми руками.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ADVANTAGES ========== -->
+  <section class="fk-section fk-advantages" id="advantages">
+    <div class="fk-container">
+      <div class="fk-section__header">
+        <span class="fk-section__tag">Чому ми</span>
+        <h2 class="fk-section__title">Переваги Flash Kids</h2>
+      </div>
+
+      <div class="fk-advantages__grid">
+        <div class="fk-advantage fk-animate">
+          <div class="fk-advantage__icon">&#128102;&#128103;</div>
+          <h3>До 8 дітей</h3>
+          <p>Маленькі групи &mdash; максимум уваги кожній дитині</p>
+        </div>
+        <div class="fk-advantage fk-animate">
+          <div class="fk-advantage__icon">&#129489;&#8205;&#127891;</div>
+          <h3>Психологи-викладачі</h3>
+          <p>Наші вихователі мають психологічну освіту</p>
+        </div>
+        <div class="fk-advantage fk-animate">
+          <div class="fk-advantage__icon">&#127858;</div>
+          <h3>3-разове харчування</h3>
+          <p>Повноцінне меню: сніданок, обід та полуденок</p>
+        </div>
+        <div class="fk-advantage fk-animate">
+          <div class="fk-advantage__icon">&#128218;</div>
+          <h3>9 програм</h3>
+          <p>Від логопеда до англійської &mdash; все в одному місці</p>
+        </div>
+        <div class="fk-advantage fk-animate">
+          <div class="fk-advantage__icon">&#128336;</div>
+          <h3>Повний день</h3>
+          <p>Працюємо з 8:00 до 18:00, понеділок&ndash;п'ятниця</p>
+        </div>
+        <div class="fk-advantage fk-animate">
+          <div class="fk-advantage__icon">&#11088;</div>
+          <h3>Google 5.0</h3>
+          <p>Найвищий рейтинг &mdash; батьки задоволені</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== GALLERY ========== -->
+  <section class="fk-section fk-section--alt fk-gallery" id="gallery">
+    <div class="fk-container">
+      <div class="fk-section__header">
+        <span class="fk-section__tag">Галерея</span>
+        <h2 class="fk-section__title">Як проходять наші дні</h2>
+      </div>
+      <div class="fk-gallery__grid">
+        <div class="fk-gallery__item fk-gallery__item--wide fk-animate">
+          <div class="fk-gallery__placeholder">
+            <span>&#127912;</span>
+            <p>Заняття з живопису</p>
+          </div>
+        </div>
+        <div class="fk-gallery__item fk-animate">
+          <div class="fk-gallery__placeholder">
+            <span>&#127925;</span>
+            <p>Музичне заняття</p>
+          </div>
+        </div>
+        <div class="fk-gallery__item fk-animate">
+          <div class="fk-gallery__placeholder">
+            <span>&#127468;&#127463;</span>
+            <p>Англійська мова</p>
+          </div>
+        </div>
+        <div class="fk-gallery__item fk-animate">
+          <div class="fk-gallery__placeholder">
+            <span>&#128483;</span>
+            <p>Логопед</p>
+          </div>
+        </div>
+        <div class="fk-gallery__item fk-gallery__item--wide fk-animate">
+          <div class="fk-gallery__placeholder">
+            <span>&#127968;</span>
+            <p>Наш простір</p>
+          </div>
+        </div>
+        <div class="fk-gallery__item fk-animate">
+          <div class="fk-gallery__placeholder">
+            <span>&#127917;</span>
+            <p>Театральна студія</p>
+          </div>
+        </div>
+      </div>
+      <p class="fk-gallery__note">* Реальні фото будуть додані найближчим часом</p>
+    </div>
+  </section>
+
+  <!-- ========== REVIEWS ========== -->
+  <section class="fk-section fk-reviews" id="reviews">
+    <div class="fk-container">
+      <div class="fk-section__header">
+        <span class="fk-section__tag">Відгуки</span>
+        <h2 class="fk-section__title">Що кажуть батьки</h2>
+      </div>
+      <div class="fk-reviews__carousel" id="reviewsCarousel">
+        <div class="fk-reviews__track">
+          <div class="fk-review-card">
+            <div class="fk-review-card__stars">&#11088;&#11088;&#11088;&#11088;&#11088;</div>
+            <p class="fk-review-card__text">&laquo;Дитина з радістю біжить до садочку щоранку! Вихователі дуже уважні, а програма розвитку просто чудова. Дякуємо Flash Kids!&raquo;</p>
+            <div class="fk-review-card__author">
+              <div class="fk-review-card__avatar">А</div>
+              <div>
+                <div class="fk-review-card__name">Анна К.</div>
+                <div class="fk-review-card__role">Мама Софії, 4 роки</div>
+              </div>
+            </div>
+          </div>
+          <div class="fk-review-card">
+            <div class="fk-review-card__stars">&#11088;&#11088;&#11088;&#11088;&#11088;</div>
+            <p class="fk-review-card__text">&laquo;Нарешті знайшли садочок, де дитині комфортно. Маленька група &mdash; це величезний плюс. Логопед допоміг з мовленням за 2 місяці!&raquo;</p>
+            <div class="fk-review-card__author">
+              <div class="fk-review-card__avatar">О</div>
+              <div>
+                <div class="fk-review-card__name">Олена М.</div>
+                <div class="fk-review-card__role">Мама Артема, 3.5 роки</div>
+              </div>
+            </div>
+          </div>
+          <div class="fk-review-card">
+            <div class="fk-review-card__stars">&#11088;&#11088;&#11088;&#11088;&#11088;</div>
+            <p class="fk-review-card__text">&laquo;Дуже подобається підхід до дітей. Відчувається, що вихователі &mdash; не просто педагоги, а й психологи. Рекомендую!&raquo;</p>
+            <div class="fk-review-card__author">
+              <div class="fk-review-card__avatar">I</div>
+              <div>
+                <div class="fk-review-card__name">Ірина Д.</div>
+                <div class="fk-review-card__role">Мама Максима, 5 років</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="fk-reviews__nav">
+          <button class="fk-reviews__btn fk-reviews__btn--prev" id="reviewPrev" aria-label="Previous">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+          </button>
+          <div class="fk-reviews__dots" id="reviewDots"></div>
+          <button class="fk-reviews__btn fk-reviews__btn--next" id="reviewNext" aria-label="Next">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PRICE ========== -->
+  <section class="fk-section fk-section--alt fk-price" id="price">
+    <div class="fk-container">
+      <div class="fk-section__header">
+        <span class="fk-section__tag">Вартість</span>
+        <h2 class="fk-section__title">Прозорі ціни</h2>
+      </div>
+
+      <div class="fk-price__cards">
+        <div class="fk-price-card fk-price-card--featured fk-animate">
+          <div class="fk-price-card__badge">Повний день</div>
+          <div class="fk-price-card__amount">
+            <span class="fk-price-card__currency">&#8372;</span>
+            <span class="fk-price-card__number">700</span>
+            <span class="fk-price-card__period">/ день</span>
+          </div>
+          <ul class="fk-price-card__features">
+            <li>&#10003; Перебування з 8:00 до 18:00</li>
+            <li>&#10003; 3-разове харчування</li>
+            <li>&#10003; Всі розвиваючі заняття</li>
+            <li>&#10003; Логопед</li>
+            <li>&#10003; Англійська мова</li>
+            <li>&#10003; Музика, театр, живопис</li>
+            <li>&#10003; Група до 8 дітей</li>
+          </ul>
+          <a href="#contacts" class="fk-btn fk-btn--primary fk-btn--full">Записатись</a>
+        </div>
+      </div>
+      <p class="fk-price__note">Можлива оплата помісячно. Деталі &mdash; за телефоном.</p>
+    </div>
+  </section>
+
+  <!-- ========== CONTACTS ========== -->
+  <section class="fk-section fk-contacts" id="contacts">
+    <div class="fk-container">
+      <div class="fk-section__header">
+        <span class="fk-section__tag">Контакти</span>
+        <h2 class="fk-section__title">Запишіть дитину</h2>
+        <p class="fk-section__desc">Залиште заявку або зв'яжіться з нами зручним способом</p>
+      </div>
+
+      <div class="fk-contacts__grid">
+        <!-- Form -->
+        <form class="fk-form fk-animate" id="contactForm">
+          <div class="fk-form__group">
+            <label for="parentName">Ваше ім'я</label>
+            <input type="text" id="parentName" name="parentName" placeholder="Анна" required>
+          </div>
+          <div class="fk-form__group">
+            <label for="childName">Ім'я дитини</label>
+            <input type="text" id="childName" name="childName" placeholder="Софія">
+          </div>
+          <div class="fk-form__group">
+            <label for="childAge">Вік дитини</label>
+            <input type="text" id="childAge" name="childAge" placeholder="3 роки">
+          </div>
+          <div class="fk-form__group">
+            <label for="phone">Телефон</label>
+            <input type="tel" id="phone" name="phone" placeholder="+380..." required>
+          </div>
+          <div class="fk-form__group">
+            <label for="message">Повідомлення</label>
+            <textarea id="message" name="message" rows="3" placeholder="Ваші запитання..."></textarea>
+          </div>
+          <button type="submit" class="fk-btn fk-btn--primary fk-btn--full">Надіслати заявку</button>
+          <p class="fk-form__success" id="formSuccess">Дякуємо! Ми зв'яжемося з вами найближчим часом.</p>
+        </form>
+
+        <!-- Info -->
+        <div class="fk-contacts__info fk-animate">
+          <div class="fk-contacts__block">
+            <h3>Адреса</h3>
+            <p>вул. Василя Макуха, 1<br>Дніпро, Лівий берег, 49000</p>
+          </div>
+          <div class="fk-contacts__block">
+            <h3>Телефон</h3>
+            <a href="tel:+380634183223">+38 (063) 418-32-23</a>
+          </div>
+          <div class="fk-contacts__block">
+            <h3>Графік</h3>
+            <p>Пн&ndash;Пт: 8:00 &mdash; 18:00<br>Сб, Нд: вихідний</p>
+          </div>
+          <div class="fk-contacts__messengers">
+            <a href="viber://chat?number=+380634183223" class="fk-messenger fk-messenger--viber" aria-label="Viber">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M11.4 0C9.473.028 5.333.344 3.073 2.467 1.353 4.187.6 6.813.533 10.08c-.067 3.266-.146 9.386 5.747 11.04l.013.003v2.528s-.04.96.6 1.16c.64.2 1.16-.373 1.84-1.12.374-.413.89-.987 1.28-1.44 3.534.293 6.254-.387 6.56-.494.707-.24 4.694-.74 5.347-6.053.674-5.48-.32-8.947-2.107-10.507l-.006-.006C18.84 4.227 15.4.413 11.4 0zm.347 1.88c3.413.293 6.373 1.56 7.88 3.773 1.534 1.294 2.36 4.36 1.76 9.067-.507 4.12-3.573 4.453-4.16 4.653-.253.093-2.627.667-5.6.493 0 0-2.214 2.68-2.907 3.387-.107.12-.24.16-.334.147-.133-.027-.17-.16-.166-.36.006-.293.013-3.653.013-3.653C3.294 17.793 3.32 12.733 3.374 10c.053-2.733.64-4.907 2.027-6.267C7.287 1.88 10.56 1.787 11.747 1.88z"/><path d="M12.107 4.347c-.24 0-.24.373 0 .386 1.573.08 3.467.907 4.093 1.627.84.84 1.267 1.92 1.347 3.24 0 .054.027.254.4.24.374-.013.36-.24.347-.346-.094-1.48-.574-2.707-1.52-3.654-.693-.8-2.8-1.574-4.667-1.494z"/><path d="M14.073 8.187c.267-.027.4.36.014.387-1.147.12-.854.706-.694 1.52.134.8-.106 1.293-.56 1.6-.4.28-.76.6-.533 1.253.173.48.867 1.44 1.694 2.08.826.627 1.6.854 2.16 1.174.533.306.626.84.333 1.173-.4.44-.88.987-1.4 1.16-.48.16-1 .067-1.52-.267-.92-.6-2.427-2.346-3.08-3.173-.654-.84-.92-1.12-1.427-2.093-.506-.974-.386-2.014.227-2.68.374-.4 1.12-1.214 1.334-1.454.213-.24.306-.387.506-.467.134-.053.28-.12.44-.146l.014-.004c.146-.04.294-.05.493-.063z"/><path d="M13.747 5.96c-.254-.027-.294.36-.04.387.893.08 1.653.453 2.173.987.547.546.854 1.253.907 2.08.014.266.413.24.4-.027-.054-.96-.414-1.8-1.04-2.44a3.58 3.58 0 0 0-2.4-1z"/><path d="M13.387 7.48c-.24-.04-.307.333-.067.386.534.094.854.347 1.094.654.253.306.36.72.386 1.093.014.267.414.24.4-.026-.026-.48-.173-.987-.493-1.387-.32-.386-.747-.64-1.32-.72z"/></svg>
+              Viber
+            </a>
+            <a href="https://t.me/+380634183223" class="fk-messenger fk-messenger--telegram" aria-label="Telegram">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 1 0 24 12.056A12.013 12.013 0 0 0 11.944 0Zm5.654 8.22-1.752 8.26c-.132.588-.48.732-.972.456l-2.688-1.98-1.296 1.248c-.144.144-.264.264-.54.264l.192-2.724 4.956-4.476c.216-.192-.048-.3-.336-.108l-6.12 3.852-2.64-.828c-.576-.18-.588-.576.12-.852l10.32-3.972c.48-.18.9.108.744.852l.012-.012Z"/></svg>
+              Telegram
+            </a>
+            <a href="https://www.instagram.com/flash_kids_/" class="fk-messenger fk-messenger--instagram" target="_blank" aria-label="Instagram">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069ZM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0Zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324ZM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8Zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881Z"/></svg>
+              Instagram
+            </a>
+          </div>
+
+          <!-- Google Maps -->
+          <div class="fk-contacts__map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2647.5!2d35.057894!3d48.5180837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d959822544504f%3A0xe06fb35e4f9b65ce!2sFLASH%20KIDS!5e0!3m2!1suk!2sua!4v1"
+              width="100%" height="300" style="border:0; border-radius: 16px;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="fk-footer">
+    <div class="fk-container fk-footer__inner">
+      <div class="fk-footer__logo">
+        <span class="fk-logo-icon fk-logo-icon--sm">FK</span>
+        <span>Flash Kids</span>
+      </div>
+      <p class="fk-footer__copy">&copy; 2026 Flash Kids. Дитячий садок у Дніпрі.</p>
+      <div class="fk-footer__links">
+        <a href="https://www.instagram.com/flash_kids_/" target="_blank">Instagram</a>
+        <a href="tel:+380634183223">+38 (063) 418-32-23</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
