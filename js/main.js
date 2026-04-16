@@ -169,4 +169,36 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 5000);
   });
 
+  // ---------- FAQ ACCORDION ----------
+  const faqItems = document.querySelectorAll('.fk-faq__item');
+
+  faqItems.forEach(item => {
+    const header = item.querySelector('.fk-faq__header');
+    const content = item.querySelector('.fk-faq__content');
+
+    header.addEventListener('click', () => {
+      const isActive = item.classList.contains('is-active');
+
+      // Close other items
+      faqItems.forEach(otherItem => {
+        if (otherItem !== item) {
+          otherItem.classList.remove('is-active');
+          otherItem.querySelector('.fk-faq__content').style.maxHeight = null;
+          otherItem.querySelector('.fk-faq__header').setAttribute('aria-expanded', 'false');
+        }
+      });
+
+      // Toggle current item
+      item.classList.toggle('is-active');
+      const isExpanded = item.classList.contains('is-active');
+      header.setAttribute('aria-expanded', isExpanded ? 'true' : 'false');
+
+      if (isExpanded) {
+        content.style.maxHeight = content.scrollHeight + 'px';
+      } else {
+        content.style.maxHeight = null;
+      }
+    });
+  });
+
 });
