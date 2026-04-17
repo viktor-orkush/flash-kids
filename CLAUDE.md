@@ -56,3 +56,4 @@ Header → Hero → About → Programs (9) → Advantages → Gallery → Review
 - [ ] Підключити форму до бекенду (Formspree або email)
 - [ ] Подати sitemap в Google Search Console
 - [ ] Зв'язати Google Business Profile з сайтом
+- [ ] ОНОВИТИ `robots.txt`: прибрати `Disallow: /` та вказати шлях до `sitemap.xml`, коли сайт буде повністю завершено
