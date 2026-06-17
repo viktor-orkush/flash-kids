@@ -1117,12 +1117,21 @@ h6 {
 
 .fk-team-card__img-wrap {
   width: 100%;
-  aspect-ratio: 4/5;
+  aspect-ratio: 3/4;
   border-radius: var(--radius-lg);
   overflow: hidden;
   margin-bottom: 20px;
   background: var(--color-bg);
   position: relative;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.10);
+}
+
+.fk-team-card__img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
 }
 
 .fk-team-card__placeholder {
