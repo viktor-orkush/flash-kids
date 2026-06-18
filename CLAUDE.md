@@ -2,10 +2,10 @@
 
 ## Проект
 - **Сайт:** Приватний дитячий садок у Дніпрі
-- **URL (майбутній):** https://flash-kids.com.ua
+- **URL:** https://flash-kids.com/ (задеплоєно)
 - **Тип:** Статичний HTML/CSS/JS (без фреймворків)
 - **GitHub:** https://github.com/viktor-orkush/flash-kids
-- **Хостинг:** Hostinger (окремий домен, ще не задеплоєно)
+- **Хостинг:** Hostinger
 
 ## Бізнес
 - **Instagram:** @flash_kids_
@@ -13,7 +13,7 @@
 - **Адреса:** вул. Василя Макуха, 1, Дніпро, Індустріальний район, Лівий берег
 - **Координати:** 48.5180837, 35.057894
 - **Графік:** Пн–Пт 8:00–18:00
-- **Ціна:** 700 грн/день
+- **Ціна:** 675 грн/день
 - **Вік дітей:** від 2.5 років, до 8 дітей у групі
 - **Рейтинг:** Google 5.0★
 
@@ -46,14 +46,9 @@ Header → Hero → About → Programs (9) → Advantages → Gallery → Review
 
 ## SEO
 - JSON-LD: `ChildCare` + `FAQPage` + `BreadcrumbList`
-- Canonical: `https://flash-kids.com.ua/`
+- Canonical: `https://flash-kids.com/`
 - Geo meta: `UA-12`, координати
 - Keywords: дитячий садок Дніпро, Лівий берег, Індустріальний район
 
 ## TODO
-- [ ] Задеплоїти на Hostinger + домен flash-kids.com.ua
-- [ ] Додати реальні фото (галерея, команда)
-- [ ] Підключити форму до бекенду (Formspree або email)
-- [ ] Подати sitemap в Google Search Console
 - [ ] Зв'язати Google Business Profile з сайтом
-- [ ] ОНОВИТИ `robots.txt`: прибрати `Disallow: /` та вказати шлях до `sitemap.xml`, коли сайт буде повністю завершено

@@ -4,6 +4,9 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
+  // Respect users who prefer reduced motion — disable decorative effects
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
   // ---------- STICKY HEADER ----------
   const header = document.getElementById('header');
   let tickingHeader = false;
@@ -145,6 +148,8 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ---------- WORD-BY-WORD TITLE REVEAL ----------
+  // Skip entirely under reduced motion — titles stay as plain visible text
+  if (!prefersReducedMotion) {
   const sectionTitles = document.querySelectorAll('.fk-section__title');
 
   sectionTitles.forEach(title => {
@@ -165,9 +170,10 @@ document.addEventListener('DOMContentLoaded', () => {
   }, { threshold: 0.3 });
 
   sectionTitles.forEach(title => titleObserver.observe(title));
+  }
 
   // ---------- 3D TILT ON PROGRAM CARDS ----------
-  if (isHoverDevice) {
+  if (isHoverDevice && !prefersReducedMotion) {
     const programCards = document.querySelectorAll('.fk-program-card');
     programCards.forEach(card => {
       card.addEventListener('mousemove', (e) => {
@@ -189,7 +195,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ---------- CURSOR SPARKLE TRAIL ----------
-  if (window.matchMedia('(pointer: fine)').matches) {
+  if (window.matchMedia('(pointer: fine)').matches && !prefersReducedMotion) {
     const sparkleChars = ['✦', '✧', '★', '⭐', '✨'];
     const sparkleColors = ['#FFD234', '#3A7BD5', '#FFB020', '#FF6B6B', '#FFECA0'];
     let sparkleCount = 0;
@@ -267,7 +273,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         // Parallax hero shapes
-        heroShapes.forEach(shape => {
+        if (!prefersReducedMotion) heroShapes.forEach(shape => {
           const speed = parseFloat(shape.dataset.speed);
           let tx = 0, ty = scrollY * speed * 0.3;
           if (isHoverDevice) {
@@ -385,6 +391,7 @@ document.addEventListener('DOMContentLoaded', () => {
   (function confettiBurst() {
     const canvas = document.getElementById('confettiCanvas');
     if (!canvas) return;
+    if (prefersReducedMotion) { canvas.style.display = 'none'; return; }
     const ctx = canvas.getContext('2d');
     const hero = canvas.parentElement;
 
@@ -629,5 +636,29 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     window.addEventListener('scroll', onFirstScroll, { passive: true });
   })();
+
+  // ---------- GALLERY "SHOW MORE" ----------
+  const galleryMoreBtn = document.getElementById('galleryMore');
+
+  if (galleryMoreBtn) {
+    const BATCH = 8; // скільки фото відкривати за один клік
+    const hiddenSelector = '.fk-gallery__item--hidden';
+
+    const updateBtn = () => {
+      const remaining = document.querySelectorAll(hiddenSelector).length;
+      if (remaining === 0) {
+        galleryMoreBtn.style.display = 'none';
+      }
+      galleryMoreBtn.setAttribute('aria-expanded', remaining === 0 ? 'true' : 'false');
+    };
+
+    galleryMoreBtn.addEventListener('click', () => {
+      const hidden = Array.from(document.querySelectorAll(hiddenSelector));
+      hidden.slice(0, BATCH).forEach(item => item.classList.remove('fk-gallery__item--hidden'));
+      updateBtn();
+    });
+
+    updateBtn(); // сховати кнопку, якщо прихованих фото немає
+  }
 
 });
