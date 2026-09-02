@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const easedProgress = easeOutExpo(progress);
       const current = easedProgress * target;
 
-      el.textContent = prefix + (isDecimal ? current.toFixed(1) : Math.round(current));
+      el.textContent = prefix + (isDecimal ? current.toFixed(1).replace('.', ',') : Math.round(current));
 
       if (progress < 1) {
         requestAnimationFrame(update);

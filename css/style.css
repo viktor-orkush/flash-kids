@@ -1273,9 +1273,11 @@ h6 {
 /* ---------- PRICE ---------- */
 .fk-price__cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
   align-items: start;
+  max-width: 820px;
+  margin: 0 auto;
 }
 
 .fk-price-card {
@@ -1874,8 +1876,7 @@ h6 {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .fk-team__grid,
-  .fk-price__cards {
+  .fk-team__grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
