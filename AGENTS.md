@@ -34,7 +34,7 @@ flash-kids/
 │   └── logo.jpg      # Оригінал
 ├── robots.txt
 ├── sitemap.xml
-└── CLAUDE.md
+└── AGENTS.md
 ```
 
 ## Секції сторінки
